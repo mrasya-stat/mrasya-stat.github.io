@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog Rasya</title>
+  <style>
+    body {
+      background-color: #ffe6f0;
+      font-family: Arial;
+      text-align: center;
+    }
+    h1 { color: #3a86ff; }
+    h2 { color: #2ecc71; }
+    p {
+      color: #333333;
+      font-size: 18px;
+    }
+    img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 4px solid #3a86ff;
+      transition: filter 0.3s ease, transform 0.3s ease;
+      filter: blur(8px);
+      cursor: pointer;
+    }
+    img:hover {
+      filter: blur(0px);
+      transform: scale(1.5);
+    }
+  </style>
+</head>
+<body>
+  <h1>Muhammad Rasya Abdussalam</h1>
+  <img src="foto.jpg">
+  <a href="https://instagram.com/m.rasya.abdslm">
+    <button>Instagram saya</button>
+  </a>
+  <p>Selamat datang di blog saya!</p>
+  <hr>
+  <h2>Artikel Pertama Saya</h2>
+  <p>Hari ini saya beranafas menggunakan oksigen, sangat menyenangkan bukan, kalian kalau masih bisa bernafas, alhamdulillah!</p>
+  <hr>
+  <h2>Artikel Kedua Saya</h2>
+  <p>di hidup ini kita harus ada prinsip, seperti jangan takut gagal, karena setiap kita ingin cahaya, harus ada kegelapan dulu, kita ingin sukses harus ada kegagalan dulu, kita harus memiliki mindset kalau gagal yaudah berati belum sempurna(kalau kata Allah belum rejeki). <i>Kalau ingin sukses, hindari gagal. Kalau ingin sehat jangan sakit.</i></p>
+  <hr>
+  <p>Dibuat oleh Muhammad Rasya Abdussalam</p>
+  <script>
+    const foto = document.querySelector('img');
+    foto.addEventListener('click', function() {
+      if (foto.style.filter === 'blur(0px)') {
+        foto.style.filter = 'blur(8px)';
+        foto.style.transform = 'scale(1)';
+      } else {
+        foto.style.filter = 'blur(0px)';
+        foto.style.transform = 'scale(1.5)';
+      }
+    });
+  </script>
+</body>
+</html>
